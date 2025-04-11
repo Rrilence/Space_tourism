@@ -25,21 +25,21 @@ The interface design is provided for various types of devices.
 
 ## **Mobile**
 <p align="center">
-<img  src="./readme_assets/Home-mobile.png" width="80%">
+<img  src="./readme_assets/Home-mobile.png" width="60%">
 </p>
 
 ## **Pop-up menu**
 <p align="center">
-<img  src="./readme_assets/Home-mobile-navbar.png" width="80%">
+<img  src="./readme_assets/Home-mobile-navbar.png" width="60%">
 </p>
 
 ## **Responsive web design**
 
 <p align="center">
-<img  src="./readme_assets/Explore.png" width="80%">
+<img  src="./readme_assets/Explore.png" width="60%">
 </p>
 <p align="center">
-<img  src="./readme_assets/Explore-hover.png" width="80%">
+<img  src="./readme_assets/Explore-hover.png" width="60%">
 </p>
 
 ## I invite you to see my other projects.
