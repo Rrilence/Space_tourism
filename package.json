@@ -1,7 +1,7 @@
 {
   "name": "spac",
   "version": "1.0.0",
-  "homepages": "https://Rrilence.github.io/Space",
+  "homepages": "https://Rrilence.github.io/Space_tourism",
   "scripts": {
     "start": "parcel src/index.html --open",
     "build": "parcel build src/index.html --dist-dir build",
@@ -17,6 +17,7 @@
     "sass": "^1.86.3"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "parcel": "^2.0.1"
   }
 }
