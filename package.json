@@ -1,0 +1,22 @@
+{
+  "name": "spac",
+  "version": "1.0.0",
+  "homepages": "https://Rrilence.github.io/Space",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html --dist-dir build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.14.4",
+    "sass": "^1.86.3"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  }
+}

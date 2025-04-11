@@ -1,0 +1,304 @@
+@import './style';
+
+body {
+    background-image: url('../assets/crew/background-crew-mobile.jpg');
+
+    @media ($tablet) {
+    background-image: url('../assets/crew/background-crew-tablet.jpg');
+    }
+
+    @media ($desktop) {
+        background-image: url('../assets/crew/background-crew-desktop.jpg');
+    }
+}
+
+header { 
+    @extend %header;
+    a {
+        cursor: pointer;
+        z-index: 2;
+        img {
+            @extend %logo;
+            z-index: 1;
+        }
+    }
+
+    hr {
+        @extend %hr;
+    }
+}
+
+.dropbtn-open {
+    @extend %btn;
+    margin-top: 5px;
+    margin-right: 24px;
+
+    img {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.navBar {
+    @extend %nav;
+}
+
+.drop__content {
+    @extend %drop;
+
+    .dropbtn-close {
+        @extend %btn;
+        position: absolute;
+        right: 24px;
+        top: 32px;
+        left: auto;
+    
+        img {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    ul {
+        @extend %ul;
+
+        li {
+            padding-bottom: 32px;
+
+            a{ @extend %link; }    
+        }
+    }
+
+    @media ($tablet) {
+
+        ul {
+            li {
+                height: 100%;
+                display: inline-block;
+                padding: 0 25px;
+
+                &:first-child {
+                    margin-left: 70px;
+                }
+        
+                a{
+                    @extend %link;
+                }    
+            }
+        }                        
+    }
+}
+
+
+main {
+    @extend %main;
+    height: 792px;
+    position: relative;
+    
+    @media ($tablet) {
+        height: 928px;
+    }
+
+    @media ($desktop) {
+        height: 888px;
+    }
+
+    menu {
+        position: absolute;
+        width: 88px;
+        display: flex;
+        justify-content: space-between;
+        top: 375px;
+        left: calc(50% - 44px);
+
+        @media ($tablet) {
+            top: 383px;
+        }
+
+        @media ($desktop) {
+            width: 180px;
+            top: 750px;
+            left: 165px;
+        }
+        
+        li {
+            list-style: none;
+        
+            .navbtn {
+                display: inline-block;
+                height: 10px;
+                width: 10px;
+                background-color: rgba(225, 225, 225, 0.25);
+                cursor: pointer;
+                border: none;
+                border-radius: 50%;
+                transition: background-color 0.5s;
+
+                @media ($desktop) {
+                    height: 15px;
+                    width: 15px;
+                }
+            
+                &:hover {
+                    background-color: rgba(225, 225, 225, 0.5);
+                }         
+                        
+                &:focus {
+                    background-color: rgba(225, 225, 225, 1);
+                }
+            }
+        }
+    }
+}
+
+.content {
+
+    @media ($desktop) {
+        width: 1110px;
+        margin: 48px auto;
+    }
+
+    .content__title {
+        @extend %h2;
+        margin-top: 24px;
+        text-align: center;
+
+        @media ($tablet) {
+            text-align: start;
+            margin-top: 40px;
+            margin-left: 40px;
+            padding-bottom: 24px;
+        }
+
+        b {
+            color: rgba(225, 225, 225, 0.25);
+            padding-right: 25px;
+        }
+    }
+}
+
+.content__item{
+
+    @media ($desktop) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .wrapper {
+        width: 272px;
+        height: 340px;
+        mask-image:linear-gradient( rgba(0, 0, 0, 1) 50%, transparent 100%);
+        margin: auto;
+
+        @media ($tablet) {
+            width: 447px;
+            height: 560px;
+            overflow: hidden;
+        }
+
+        @media ($desktop) {
+            width: 540px;
+            height: 734px;
+            margin: 0;
+        }
+
+        .wrapper-img-one{
+            @extend %wrap-img;
+            background-image: url('../assets/crew/image-douglas-hurley.webp');
+        }
+
+        .wrapper-img-two{
+            @extend %wrap-img;
+            background-image: url('../assets/crew/image-mark-shuttleworth.webp');
+
+            @media ($desktop) {
+                background-position: right;
+            }
+        }
+
+        .wrapper-img-three{
+            @extend %wrap-img;
+            background-image: url('../assets/crew/image-victor-glover.webp');
+            background-position: bottom;
+        }
+
+        .wrapper-img-four{
+            @extend %wrap-img;
+            background-image: url('../assets/crew/image-anousheh-ansari.webp');
+            background-position: bottom;
+        }
+    }
+
+}
+
+.content__text {
+    width: 327px;
+    height: 319px;
+    margin: 64px auto 25px;
+
+    @media ($tablet) {
+        width:512px;
+    }
+
+    @media ($desktop) {
+        width: 539px;
+        height: 237px;
+        margin: 197px 0;
+    }
+
+    h2 {
+        @extend %h1;
+        font-size: 18px;
+        color: rgba(225, 225, 225, 0.5);
+        margin: 0 auto 10px;
+        text-align: center;
+
+        @media ($tablet) {
+            font-size: 24px;
+            margin-bottom: 18px;
+        }
+
+        @media ($desktop) {
+            font-size: 32px;
+            text-align: start;
+            margin-bottom: 22px;
+        }
+    }
+
+    h1 {
+        @extend %h1;
+        font-size: 24px;
+        margin-bottom: 30px;
+        text-align: center;
+
+        @media ($tablet) {
+            font-size: 40px;
+        }
+
+        @media ($desktop) {
+            text-align: start;
+            font-size: 56px;
+            margin-bottom: 28px;
+        }
+    }
+
+    p {
+        @extend %p;
+        text-align: center;
+
+        @media ($desktop) {
+            text-align: start;
+        }
+
+    }
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

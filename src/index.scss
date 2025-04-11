@@ -1,0 +1,210 @@
+@import './style';
+
+body {
+    background-image: url('../assets/home/background-home-mobile.jpg');
+
+    @media ($tablet) {
+    background-image: url('../assets/home/background-home-tablet.jpg');
+    }
+
+    @media ($desktop) {
+        background-image: url('../assets/home/background-home-desktop.jpg');
+    }
+}
+
+header { 
+    @extend %header;
+        a {
+            cursor: pointer;
+            z-index: 2;
+            img {
+                @extend %logo;
+                z-index: 1;
+            }
+        }
+
+    hr {
+        @extend %hr;
+    }
+}
+
+.dropbtn-open {
+    @extend %btn;
+    margin-top: 5px;
+    margin-right: 24px;
+
+    img {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.navBar {
+    @extend %nav;
+}
+
+.drop__content {
+    @extend %drop;
+      
+    .dropbtn-close {
+        @extend %btn;
+        position: absolute;
+        right: 24px;
+        top: 32px;
+        left: auto;
+    
+        img  {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    ul {
+        @extend %ul;
+
+        li {
+            padding-bottom: 32px;
+
+                a{ @extend %link; }    
+        }
+    }
+
+    @media ($tablet) {
+
+        ul {
+            li {
+                height: 100%;
+                display: inline-block;
+                padding: 0 25px;
+        
+                &:first-child {
+                    margin-left: 70px;
+                }
+        
+                a{
+                    @extend %link;
+                }    
+            }
+        }                     
+    }
+}
+
+
+main {
+    @extend %main;
+}
+    
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+    @media ($desktop) {
+        width: 1110px;
+        margin: 200px auto;
+        padding-top: 323px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    &__text {
+        width: 327px;
+        text-align: center;
+
+        @media ($tablet) {
+            width: 512px;
+        }
+            
+        @media ($desktop) {
+            width: 540px;
+            text-align: start;
+        }
+    
+        h2 {
+            margin-top: 24px;
+            @extend %h2;
+
+            @media ($tablet) {
+                margin-top: 128px;
+                font-size: 28px;
+            }
+                
+            @media ($desktop) {
+                margin-top: 3px;
+            }
+        }
+                
+        h1 {
+            @extend %h1;
+            padding: 6px 0;
+            font-size: 80px;
+            margin: 24px 0;
+                    
+            @media ($tablet) {
+                font-size: 144px;
+                padding: 10px 0;
+            }
+                    
+            @media ($desktop) {
+                margin-top: 3px;
+            }
+        }
+
+        p {
+            @extend %p;
+
+            @media ($tablet) {
+                padding: 10px 0;
+            }
+                    
+            @media ($desktop) {
+                margin-top: 3px;
+            }
+    
+        }
+    }
+}
+    
+.explore {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 144px;
+    height: 144px;
+    margin-top: 144px;
+    background-color: $white;
+    color: $darkblue;
+    font-family: 'bellefair';
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 63px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 100px rgba($color: $white, $alpha: 0);
+    transition: color 0.5s, text-shadow 0.5s, box-shadow 0.5s;
+
+    &:hover {
+        color: rgba($color: $darkblue, $alpha: 0.5);
+        text-shadow: 3px 3px 2px #CECECE;
+        box-shadow: 0px 0px 0px 100px rgba($color: $white, $alpha: 0.15);
+    }
+
+    @media ($tablet) {
+        width: 272px;
+        height: 272px;
+        font-size: 32px;
+        margin-top: 66px;
+        padding-top: 120px;
+    }
+        
+    @media ($desktop) {
+        margin-top: 0;   
+    }
+}
+    
+.show {
+    display: block;
+}

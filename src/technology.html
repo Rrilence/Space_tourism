@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space tourism</title>
+    <link rel="stylesheet" href="./technology.scss">
+</head>
+<body class="body_hide">
+    <header>
+        <a href="./index.html">
+            <img src="../assets/shared/logo.svg" alt="logo">
+        </a>
+        <hr>
+        <button type="button" class="dropbtn-open">
+            <img src="../assets/shared/icon-hamburger.svg" alt="humburger" width="24" height="21">
+        </button>
+        <nav class="navBar"> 
+            <div class="drop__content">
+                <button type="button" class="dropbtn-close">
+                    <img src="../assets/shared/icon-close.svg" alt="close" width="24" height="21">
+                </button>
+                <ul>
+                    <li><a href="./index.html"><b>00</b>&nbsp; HOME</a></li>
+                    <li><a href="./destination.html"><b>01</b>&nbsp; DESTINATION</a></li>
+                    <li><a href="./crew.html"><b>02</b>&nbsp; CREW</a></li>
+                    <li><a href="./technology.html"><b>03</b>&nbsp; TECHNOLOGY</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <menu>
+            <li>
+                <button type="button" value="launchVenicle" class="navbtn" >1</button>
+            </li>
+            <li>
+                <button type="button" value="spaceport" class="navbtn" >2</button>
+            </li>
+            <li>
+                <button type="button" value="spaceCapsule" class="navbtn" >3</button>
+            </li>
+        </menu>
+        <div class="content">
+            <h2 class="content__title"><b>03</b>space launch 101</h2>
+            <div class="content__item" id="launchVenicle">
+                <img src="../assets/technology/image-launch-vehicle-portrait.jpg" alt="launch venicle">
+                <div class="content__text">
+                    <h2>The Terminology…</h2>
+                    <h1>Launch venicle</h1>
+                    <p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+            </div>
+            </div>
+            <div class="content__item hidden" id="spaceport">
+                <img src="../assets/technology/image-spaceport-portrait.jpg" alt="spaceport">
+                <div class="content__text">
+                    <h2>The Terminology…</h2>
+                    <h1>Spaceport</h1>
+                    <p>A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.</p>
+                </div>
+            </div>
+            <div class="content__item hidden" id="spaceCapsule">
+                <img src="../assets/technology/image-space-capsule-portrait.jpg" alt="space-capsule">
+                <div class="content__text">
+                    <h2>The Terminology…</h2>
+                    <h1>Space capsule</h1>
+                    <p>A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>

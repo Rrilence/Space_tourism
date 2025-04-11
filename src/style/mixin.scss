@@ -1,0 +1,222 @@
+%link {
+    display: inline-block;
+    width: 100%;
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'barlowCondensed';
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    border-right: 4px solid rgba(225, 225, 225, 0);
+    transition: border-right 0.5s;
+
+    &:hover {
+        border-right: 4px solid rgba(225, 225, 225, 0.5);
+        transition: border-right 0.5s;
+
+        @media ($tablet) {
+            border-right: none;
+            border-bottom: 4px solid rgba(225, 225, 225, 0.5);
+        }
+    }
+
+    &:focus {
+        border-right: 4px solid rgba(225, 225, 225, 1);
+        @media ($tablet) {
+            border-right: none;
+            border-bottom: 4px solid rgba(225, 225, 225, 1);
+        }
+    }
+
+    @media ($tablet) {
+        display: inline-flex;
+        align-items: center;
+        height: 100%;
+        border-right: none;
+        border-bottom: 4px solid rgba(225, 225, 225, 0);
+        transition: border-bottom 0.5s;
+    }
+}
+
+%header {
+    width: 100%;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    @media ($tablet) {
+        padding-top: 0;
+        height: 96px;
+        }
+    
+        @media ($desktop) {
+            margin-top: 40px;
+            position: relative;
+        }
+}
+
+%logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 24px;
+
+    @media ($tablet) {
+        width: 48px;
+        height: 48px;
+        margin-left: 40px;
+        }
+        
+    @media ($desktop) {
+        margin-left: 64px;
+        }
+}
+
+%hr {
+    display: none;
+        background-color: rgba(225, 225, 225, 0.1);
+        margin-left: 176px;
+        position: absolute;
+        width: 560px;
+        size: 1px;
+        z-index: 1;
+
+        @media ($tablet) {
+            display: none;
+            }
+        
+            @media ($desktop) {
+                display: block;
+        }
+}
+
+%drop {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 264px;
+    height: 100%;
+    background-color: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(15px);
+
+    @media ($tablet) {
+        display: block;
+        width: 640px;
+        height: 100%; 
+    }
+}
+
+%nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 904px;
+    right: 0;
+    top: 0;
+    z-index: 1;
+
+    @media ($tablet) {
+        display: block;
+        height: 96px;            
+    } 
+}
+
+%ul {
+    list-style: none;
+    height: 812px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 133px;
+    padding-left: 32px;
+
+    @media ($tablet) {
+        padding: 0;
+        height: 96px;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+%main {
+    width: 100%;
+    height: 724px;
+
+    @media ($tablet) {
+           height: 928px;
+    }
+
+        @media ($desktop) {
+            height: 888px;
+        }
+}
+
+%h1 {
+    text-transform: uppercase;
+    color: $white;
+    font-family: 'bellefair';
+    font-weight: 100;
+}
+
+%h2 {
+    color: $lightblue;
+    font-family: 'barlowCondensed';
+    font-weight: 100;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 2px #0000;
+    letter-spacing: 4px;
+
+    @media ($tablet) {
+        font-size: 20px;
+    }
+
+    @media ($desktop) {
+        font-size: 28px;
+    }
+}
+
+%p {
+    color: $lightblue;
+    font-family: 'barlow';
+    font-weight: 100;
+    font-size: 15px;
+    text-shadow: 0 4px 4px #0000;
+    line-height: 180%;
+
+    @media ($tablet) {
+        font-size: 16px;
+    }
+                    
+    @media ($desktop) {
+        font-size: 18px;
+    }
+}
+
+%h3 {
+    color: $lightblue;
+    text-transform: uppercase;
+    font-family: 'barlowCondensed';
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 2px; 
+}
+
+%wrap-img {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+
+%btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    @media ($tablet) {
+        display: none;
+        }
+}
