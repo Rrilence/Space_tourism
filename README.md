@@ -20,26 +20,27 @@ The interface design is provided for various types of devices.
 
 ## **Tablet**
 <p align="center">
-<img  src="./readme_assets/Home-tablet.png" width="80%">
+<img  src="./readme_assets/Home-tablet.png" width="60%">
 </p>
 
 ## **Mobile**
 <p align="center">
-<img  src="./readme_assets/Home-mobile.png" width="60%">
+<img  src="./readme_assets/Home-mobile.png" width="30%">
 </p>
 
 ## **Pop-up menu**
 <p align="center">
-<img  src="./readme_assets/Home-mobile-navbar.png" width="60%">
+<img  src="./readme_assets/Home-mobile-navbar.png" width="30%">
 </p>
 
 ## **Responsive web design**
 
 <p align="center">
-<img  src="./readme_assets/Explore.png" width="60%">
+<img  src="./readme_assets/Explore.png" width="40%">
 </p>
+
 <p align="center">
-<img  src="./readme_assets/Explore-hover.png" width="60%">
+<img  src="./readme_assets/Explore-hover.png" width="40%">
 </p>
 
 ## I invite you to see my other projects.
